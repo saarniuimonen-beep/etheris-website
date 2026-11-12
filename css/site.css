@@ -332,6 +332,13 @@ a:hover { color: var(--accent-2); }
 }
 .footer-grid a { color: var(--fg-muted); text-decoration: none; }
 .footer-grid a:hover { color: var(--fg); }
+.footer-note {
+  margin: 0.55rem 0 0;
+  max-width: 42rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: color-mix(in srgb, var(--fg-muted) 85%, transparent);
+}
 
 @media (max-width: 900px) {
   .feature-grid,
