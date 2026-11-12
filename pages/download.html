@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download — Etheris OS</title>
+  <meta name="description" content="Etheris OS download status, checksums, and system requirements.">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt="">etheris</a>
+      <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-links" id="site-nav" data-nav-links>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="download.html" aria-current="page">Download</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="development.html">Development</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle light and dark theme">Theme</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="page-hero">
+      <h1>Download</h1>
+      <p>Public download links are withheld until release artifacts are verified and publication is approved.</p>
+    </header>
+    <section class="section" style="padding-top:0">
+      <div class="panel">
+        <h3>Latest development ISO (local builds)</h3>
+        <ul>
+          <li><strong>Version:</strong> 0.1.0-alpha</li>
+          <li><strong>Image:</strong> etheris-2026.11.10-x86_64.iso (~2.1 GiB) — Performance/GPU Manager binaries need the Nov 12+ rebake (execute-bit fix)</li>
+          <li><strong>SHA256 (Nov 10):</strong> <code>7a5ea54b9b11dc7aa2a981f9887d94c2cc7007707c834f6692556607ba7416f0</code></li>
+          <li><strong>Includes:</strong> Neo-Aero desktop, gaming helpers, browser warm path; Performance Manager fully usable after rebake</li>
+          <li><strong>Status:</strong> experimental pre-release — not declared stable</li>
+        </ul>
+        <p class="callout" style="margin-top:1rem">This website does not host the ISO. Build from the project tree with <code>./build.sh</code> or wait for an approved GitHub Release.</p>
+      </div>
+      <div class="split" style="margin-top:1.5rem">
+        <div class="panel">
+          <h3>System requirements</h3>
+          <ul>
+            <li>64-bit x86_64 UEFI or BIOS</li>
+            <li>~4 GiB RAM recommended for desktop + browser</li>
+            <li>GPU with working Mesa or NVIDIA drivers for Wayland</li>
+            <li>Storage: enough for Arch root + home (20 GiB+ practical)</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Before you install</h3>
+          <ul>
+            <li>Read known issues in project docs</li>
+            <li>Verify checksums after download</li>
+            <li>Test in a VM before touching physical disks</li>
+            <li>Hardware matrix rows are evidence-based only</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap">© Etheris OS</div></footer>
+  <script src="../js/site.js" defer></script>
+</body>
+</html>

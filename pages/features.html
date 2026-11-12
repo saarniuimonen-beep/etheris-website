@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features — Etheris OS</title>
+  <meta name="description" content="Neo-Aero desktop, Performance Manager, GPU Manager, gaming, and development features in Etheris.">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt="">etheris</a>
+      <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-links" id="site-nav" data-nav-links>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html" aria-current="page">Features</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="development.html">Development</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle light and dark theme">Theme</button>
+        <a class="btn btn-primary" href="download.html">Download</a>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="page-hero">
+      <h1>Features</h1>
+      <p>Available, experimental, and planned — labeled honestly.</p>
+    </header>
+    <section class="section" style="padding-top:0">
+      <div class="feature-grid">
+        <article class="feature"><h3>Neo-Aero desktop — available</h3><p>Sway, Waybar, Rofi launcher, ReGreet, wallpaper app, Control Center, Settings.</p></article>
+        <article class="feature"><h3>Performance Manager — available</h3><p>Four profiles with capability detection. Physical GPU effects need hardware verification.</p></article>
+        <article class="feature"><h3>GPU Manager — available</h3><p>Detection via etheris-hw, driver recommendations via etheris-drivers, linked performance profiles.</p></article>
+        <article class="feature"><h3>Gaming stack — available</h3><p>Steam, Proton helpers, multilib, GameMode. Anti-cheat bypasses are intentionally absent.</p></article>
+        <article class="feature"><h3>Lean idle RAM — target</h3><p>≤500 MiB session RSS with Sway + lean Firefox preload (`etheris ram idle-check`). Extra apps are out of scope for the gate.</p></article>
+        <article class="feature"><h3>Installer / OOBE — partially verified</h3><p>Prior milestone VM passes; keep testing before calling install media release-ready.</p></article>
+        <article class="feature"><h3>Immutable-prep — foundation</h3><p>Btrfs installs can remount /usr read-only with developer-mode unlock. Full A/B atomic updates are not shipped yet.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap">© Etheris OS</div></footer>
+  <script src="../js/site.js" defer></script>
+</body>
+</html>

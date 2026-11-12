@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etheris OS — Clear glass over ocean light</title>
+  <meta name="description" content="Etheris is an Arch-based Wayland Linux distribution with a Neo-Aero desktop, performance management, and a focus on clarity and efficiency.">
+  <meta name="theme-color" content="#07111f">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">etheris</a>
+      <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-links" id="site-nav" data-nav-links>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/features.html">Features</a></li>
+        <li><a href="pages/download.html">Download</a></li>
+        <li><a href="pages/docs.html">Docs</a></li>
+        <li><a href="pages/development.html">Development</a></li>
+        <li><a href="pages/community.html">Community</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle light and dark theme">Theme</button>
+        <a class="btn btn-primary" href="pages/download.html">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-media" role="img" aria-label="Etheris Ocean Glass desktop atmosphere"></div>
+      <div class="wrap hero-copy reveal">
+        <p class="status-pill">0.1.0-alpha · development build</p>
+        <h1 class="hero-brand">Etheris</h1>
+        <p>An Arch-based Wayland system with a Neo-Aero desktop — luminous, efficient, and honest about what works today.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="pages/download.html">Get Etheris</a>
+          <a class="btn btn-ghost" href="pages/docs.html">Read the docs</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Built for everyday clarity</h2>
+        <p class="lede">Etheris ships a coherent Sway desktop, practical system tools, and performance controls that only expose hardware-supported options.</p>
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Neo-Aero desktop</h3>
+            <p>Ocean Glass atmosphere, floating panel or dock, Rofi launcher, ReGreet login, and Settings that stay out of the way.</p>
+          </article>
+          <article class="feature">
+            <h3>Performance Manager</h3>
+            <p>Four profiles — Maximum, Balanced, Quiet, Power Saving — applied through safe CPU and GPU interfaces. No overclocking.</p>
+          </article>
+          <article class="feature">
+            <h3>GPU Manager</h3>
+            <p>Detect NVIDIA, AMD, and Intel graphics, review driver recommendations, and keep performance settings consistent.</p>
+          </article>
+          <article class="feature">
+            <h3>Gaming-ready stack</h3>
+            <p>Steam, Proton helpers, multilib, and GameMode where appropriate — without anti-cheat bypass tooling.</p>
+          </article>
+          <article class="feature">
+            <h3>Privacy defaults</h3>
+            <p>No telemetry by default, nftables on, SSH off unless you enable it. Security claims stay limited and documented.</p>
+          </article>
+          <article class="feature">
+            <h3>Arch foundation</h3>
+            <p>pacman, rolling packages with optional Archive lag channels, and a lightweight installer path under active testing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <h2>Efficiency without empty promises</h2>
+          <p class="lede">The ~500 MB idle RAM target remains aspirational. Etheris prefers a usable desktop over stripping security, drivers, or reliability.</p>
+          <p class="lede">Hardware compatibility is documented only with evidence. Untested hardware is marked untested.</p>
+          <a class="btn" href="pages/features.html">Explore features</a>
+        </div>
+        <aside class="panel">
+          <h3>Current development status</h3>
+          <ul>
+            <li>Live ISO boots in QEMU with Neo-Aero desktop</li>
+            <li>Performance Manager and GPU Manager in tree (rebake for execute bits)</li>
+            <li>Installer and OOBE verified on prior milestones</li>
+            <li>Public release not declared stable yet</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Download and source</h2>
+        <p class="lede">Release artifacts and repository links will be published after verification and owner approval. Until then, treat builds as experimental.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="pages/download.html">Download status</a>
+          <a class="btn" href="pages/development.html">Development</a>
+          <a class="btn btn-ghost" href="pages/community.html">Community</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>© Etheris OS · Neo-Aero · local preview site</div>
+      <div>
+        <a href="pages/docs.html">Documentation</a> ·
+        <a href="pages/development.html">Source</a> ·
+        <a href="pages/community.html">Support</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Development — Etheris OS</title>
+  <meta name="description" content="Etheris OS development status, repositories, and contribution overview.">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt="">etheris</a>
+      <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-links" id="site-nav" data-nav-links>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="development.html" aria-current="page">Development</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle light and dark theme">Theme</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="page-hero">
+      <h1>Development</h1>
+      <p>Source preparation is underway. Public GitHub visibility requires explicit owner approval.</p>
+    </header>
+    <article class="prose section" style="padding-top:0">
+      <h2>Repositories</h2>
+      <p>Prefer a maintainable layout: main OS tree (<code>etheris-os</code>) plus this website. Extra repos only when a clear boundary exists.</p>
+      <div class="callout">GitHub organisation/links will appear here after publication approval. Do not treat missing links as a live public project yet.</div>
+      <h2>Build</h2>
+      <p>On Fedora hosts, ISOs build via Podman: <code>./build.sh</code>. Testing uses <code>qemu:///session</code> only — no host disk or package changes without approval.</p>
+      <h2>Roadmap themes</h2>
+      <ul>
+        <li>Integration verification and hardware matrix evidence</li>
+        <li>Installer / recovery polish</li>
+        <li>Performance Manager physical validation</li>
+        <li>Documentation and release packaging</li>
+      </ul>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="wrap">© Etheris OS</div></footer>
+  <script src="../js/site.js" defer></script>
+</body>
+</html>
