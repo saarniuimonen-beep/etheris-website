@@ -1,10 +1,10 @@
 # Etheris OS website
 
-Independent static site for the **Etheris OS** Linux distribution (Ocean Glass / Neo-Aero). No build step.
+Static website for the **Etheris OS** Linux distribution. No build step — open the HTML files directly.
 
 **Live (GitHub Pages):** https://saarniuimonen-beep.github.io/etheris-website/
 
-**Intended custom domain:** `etheris-os.org` (available — buy, then wire DNS below)
+**Intended custom domain:** `etheris-os.org` (available — buy it, then set DNS below)
 
 This project is not affiliated with Etheris Labs, Etheris AG, Etheris Chile, AETHERIS, or other “Etheris” brands. `etheris.com` / `etheris.org` are already taken by unrelated parties.
 

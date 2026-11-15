@@ -31,37 +31,38 @@
   <main id="main" class="wrap">
     <header class="page-hero">
       <h1>Download</h1>
-      <p>Public download links are withheld until release artifacts are verified and publication is approved.</p>
+      <p>Public download links are not up yet. They will appear after the ISO is tested and a release is published.</p>
     </header>
     <section class="section" style="padding-top:0">
       <div class="panel">
         <h3>Latest development ISO (local builds)</h3>
         <ul>
           <li><strong>Version:</strong> 0.1.0-alpha</li>
-          <li><strong>Image:</strong> etheris-2026.11.10-x86_64.iso (~2.1 GiB) — Performance/GPU Manager binaries need the Nov 12+ rebake (execute-bit fix)</li>
-          <li><strong>SHA256 (Nov 10):</strong> <code>7a5ea54b9b11dc7aa2a981f9887d94c2cc7007707c834f6692556607ba7416f0</code></li>
-          <li><strong>Includes:</strong> Neo-Aero desktop, gaming helpers, browser warm path; Performance Manager fully usable after rebake</li>
-          <li><strong>Status:</strong> experimental pre-release — not declared stable</li>
+          <li><strong>Image:</strong> etheris-2026.11.15-x86_64.iso (~2.2 GiB)</li>
+          <li><strong>SHA256:</strong> <code>eb677f92d3d6a336b1eca3f6b8f64de4e649badabf22c17366468c3a4b05dfd6</code></li>
+          <li><strong>Includes:</strong> Etheris desktop (Menu, launcher, ReGreet), Performance/GPU managers, optional LUKS installer, Software Center, doctor</li>
+          <li><strong>Verified (QEMU):</strong> stability · reliability · security · bug criteria · idle RAM ~169 MiB · LUKS unlock E2E</li>
+          <li><strong>Status:</strong> experimental — not a stable release</li>
         </ul>
-        <p class="callout" style="margin-top:1rem">This website does not host the ISO. Build from the project tree with <code>./build.sh</code> or wait for an approved GitHub Release.</p>
+        <p class="callout" style="margin-top:1rem">This website does not host the ISO. Build it yourself from the <a href="https://github.com/saarniuimonen-beep/etheris-os">etheris-os</a> repo with <code>./build.sh</code>, or wait for a GitHub Release.</p>
       </div>
       <div class="split" style="margin-top:1.5rem">
         <div class="panel">
           <h3>System requirements</h3>
           <ul>
-            <li>64-bit x86_64 UEFI or BIOS</li>
-            <li>~4 GiB RAM recommended for desktop + browser</li>
+            <li>64-bit PC (x86_64), UEFI or BIOS</li>
+            <li>About 4 GB RAM recommended for desktop + browser</li>
             <li>GPU with working Mesa or NVIDIA drivers for Wayland</li>
-            <li>Storage: enough for Arch root + home (20 GiB+ practical)</li>
+            <li>About 20 GB free disk space for a practical install</li>
           </ul>
         </div>
         <div class="panel">
           <h3>Before you install</h3>
           <ul>
-            <li>Read known issues in project docs</li>
-            <li>Verify checksums after download</li>
-            <li>Test in a VM before touching physical disks</li>
-            <li>Hardware matrix rows are evidence-based only</li>
+            <li>Read known issues in the project docs</li>
+            <li>Check the SHA256 checksum after download</li>
+            <li>Try it in a virtual machine before using a real disk</li>
+            <li>Only listed hardware has been tested</li>
           </ul>
         </div>
       </div>
