@@ -42,16 +42,17 @@
       <div class="callout">Repos remain experimental. A public ISO download host is not published yet — build locally with <code>./build.sh</code>.</div>
       <h2>Build</h2>
       <p>Build the ISO with Podman: <code>./build.sh</code>. Tests run in a user-session QEMU VM and should not change your host system.</p>
-      <h2>Recent progress (through 2026-11-15)</h2>
+      <h2>Recent progress (through 2026-11-19)</h2>
       <ul>
-        <li>Desktop polish: Menu, launcher, greeter, Ocean Glass / Flow tokens</li>
-        <li>QEMU rock-solid gates: stability, reliability, security, bugs, idle RAM (~169 MiB)</li>
+        <li>Desktop polish: Menu, launcher, greeter, Ocean Glass / Flow tokens, power menu</li>
+        <li>QEMU rock-solid gates: stability, reliability, security, bugs, game-ready stack, idle RAM (~209 MiB)</li>
         <li>Installer persistence and optional LUKS unlock E2E</li>
-        <li>Software Center, doctor, source CI checks</li>
+        <li>Software Center, Monitor, Privacy tools, doctor</li>
+        <li>Gaming: <code>etheris-steam</code> + desktop hook, GameMode groups, NVIDIA modeset, no global SDL X11 poison</li>
       </ul>
       <h2>Still open</h2>
       <ul>
-        <li>Physical GPU / hardware matrix evidence</li>
+        <li>Physical GPU / hardware matrix evidence (real titles)</li>
         <li>Secure Boot and signed public releases</li>
         <li>Installer recovery polish and public ISO hosting</li>
       </ul>
