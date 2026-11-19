@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Download — Etheris OS</title>
-  <meta name="description" content="Etheris OS download status, checksums, and system requirements.">
+  <meta name="description" content="Download Etheris OS 0.1.0-alpha — public development ISO, checksums, and install guide.">
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/site.css">
 </head>
@@ -31,21 +31,27 @@
   <main id="main" class="wrap">
     <header class="page-hero">
       <h1>Download</h1>
-      <p>Public download links are not up yet. They will appear after the ISO is tested and a release is published.</p>
+      <p>Public <strong>0.1.0-alpha</strong> development builds. Try in a VM first. Not a stable release.</p>
     </header>
     <section class="section" style="padding-top:0">
       <div class="panel">
-        <h3>Latest development ISO (local builds)</h3>
+        <h3>Get Etheris OS</h3>
         <ul>
-          <li><strong>Version:</strong> 0.1.0-alpha</li>
+          <li><strong>Version:</strong> 0.1.0-alpha (public development)</li>
+          <li><strong>Release:</strong> <a href="https://github.com/saarniuimonen-beep/etheris-os/releases/tag/v0.1.0-alpha">v0.1.0-alpha on GitHub</a></li>
           <li><strong>Image:</strong> etheris-2026.11.19-x86_64.iso (~2.2 GiB)</li>
-          <li><strong>SHA256:</strong> <code>10ea77d5b2c183341b85635a9f10693bd102f02b620cf809170e08c394482265</code></li>
-          <li><strong>Includes:</strong> Etheris desktop (Menu, launcher, ReGreet), Performance/GPU managers, optional LUKS installer, Software Center, live Steam/Proton stack, doctor</li>
-          <li><strong>Verified (QEMU):</strong> validate-iso · reliability · security · bugs · game-ready stack · idle RAM ~209 MiB · LUKS unlock E2E (prior)</li>
-          <li><strong>Not claimed:</strong> physical GPU / real Steam titles / anti-cheat online</li>
-          <li><strong>Status:</strong> experimental — not a stable release</li>
+          <li><strong>Checksums:</strong> download <code>SHA256SUMS</code> from the release and verify before writing USB</li>
+          <li><strong>Source:</strong> <a href="https://github.com/saarniuimonen-beep/etheris-os">github.com/saarniuimonen-beep/etheris-os</a></li>
         </ul>
-        <p class="callout" style="margin-top:1rem">This website does not host the ISO. Build it yourself from the <a href="https://github.com/saarniuimonen-beep/etheris-os">etheris-os</a> repo with <code>./build.sh</code>, or wait for a GitHub Release.</p>
+        <p class="callout" style="margin-top:1rem">
+          GitHub’s per-file limit is 2 GiB, so the ISO may be linked from a mirror or built with <code>./build.sh</code>.
+          The release always publishes <strong>SHA256SUMS</strong> and release notes. Always verify the hash.
+        </p>
+        <div class="hero-actions" style="margin-top:1.25rem">
+          <a class="btn btn-primary" href="https://github.com/saarniuimonen-beep/etheris-os/releases/latest">Open releases</a>
+          <a class="btn" href="https://github.com/saarniuimonen-beep/etheris-os/blob/main/docs/GETTING-STARTED.md">Getting started</a>
+          <a class="btn btn-ghost" href="https://github.com/saarniuimonen-beep/etheris-os">Source code</a>
+        </div>
       </div>
       <div class="split" style="margin-top:1.5rem">
         <div class="panel">
@@ -54,18 +60,26 @@
             <li>64-bit PC (x86_64), UEFI or BIOS</li>
             <li>About 4 GB RAM recommended for desktop + browser</li>
             <li>GPU with working Mesa or NVIDIA drivers for Wayland</li>
-            <li>About 20 GB free disk space for a practical install</li>
+            <li>About 20 GB free disk for a practical install</li>
           </ul>
         </div>
         <div class="panel">
           <h3>Before you install</h3>
           <ul>
-            <li>Read known issues in the project docs</li>
-            <li>Check the SHA256 checksum after download</li>
-            <li>Try it in a virtual machine before using a real disk</li>
-            <li>Only listed hardware has been tested</li>
+            <li>Read <a href="https://github.com/saarniuimonen-beep/etheris-os/blob/main/docs/GETTING-STARTED.md">Getting started</a></li>
+            <li>Verify SHA256 after download</li>
+            <li>Try a virtual machine before using a real disk</li>
+            <li>Keep backups — alpha builds can break</li>
           </ul>
         </div>
+      </div>
+      <div class="panel" style="margin-top:1.5rem">
+        <h3>Build from source</h3>
+        <pre style="overflow:auto;font-size:0.9rem"><code>git clone https://github.com/saarniuimonen-beep/etheris-os.git
+cd etheris-os
+./build.sh
+# → out/etheris-*.iso + out/SHA256SUMS</code></pre>
+        <p>Needs Podman and about 12–20 GB free. Details in the project README.</p>
       </div>
     </section>
   </main>
